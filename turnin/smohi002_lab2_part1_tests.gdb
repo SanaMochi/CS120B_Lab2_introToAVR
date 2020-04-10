@@ -39,6 +39,9 @@ echo Running all tests..."\n\n
 #checkResult
 
 # Add tests below
+
+# Add tests below
+
 test “PINA: 0x00 => PORTB: 0x00”
 setPINA 0x00
 continue 5
@@ -51,8 +54,8 @@ continue 5
 expectPORTB 0x00
 checkResult
 
-test “PINA: 0x04 => PORTB: 0x00”
-setPINA 0x04
+test “PINA: 0x03 => PORTB: 0x00”
+setPINA 0x03
 continue 5
 expectPORTB 0x00
 checkResult
@@ -62,6 +65,7 @@ setPINA 0x01
 continue 5
 expectPORTB 0x01
 checkResult
+
 
 # Report on how many tests passed/tests ran
 set $passed=$tests-$failed
